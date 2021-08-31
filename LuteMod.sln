@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuteMod", "LuteMod\LuteMod.csproj", "{407A395C-B446-4620-A96E-C94FA4873324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sanford.Multimedia.Midi", "Sanford.Multimedia.Midi\Sanford.Multimedia.Midi.csproj", "{4269C72A-8D3A-4737-8F89-72EAA33EA9E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{407A395C-B446-4620-A96E-C94FA4873324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407A395C-B446-4620-A96E-C94FA4873324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407A395C-B446-4620-A96E-C94FA4873324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407A395C-B446-4620-A96E-C94FA4873324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407A395C-B446-4620-A96E-C94FA4873324}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{4269C72A-8D3A-4737-8F89-72EAA33EA9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4269C72A-8D3A-4737-8F89-72EAA33EA9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4269C72A-8D3A-4737-8F89-72EAA33EA9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4269C72A-8D3A-4737-8F89-72EAA33EA9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4269C72A-8D3A-4737-8F89-72EAA33EA9E1}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{4269C72A-8D3A-4737-8F89-72EAA33EA9E1}.Test|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {982096AB-A6A2-46C0-A4B5-9FA7AF422272}
+	EndGlobalSection
+EndGlobal
