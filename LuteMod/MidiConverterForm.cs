@@ -244,8 +244,28 @@ namespace LuteMod
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                SaveManager.DeleteData(SaveManager.SaveFilePath + index.PartitionNames[PartitionIndexBox.SelectedIndex]);
-                index.PartitionNames.RemoveAt(PartitionIndexBox.SelectedIndex);
+                var selectedList = new List<int>();
+                IEnumerable<int> selectedEnum;
+
+                selectedEnum = PartitionIndexBox.SelectedIndices.Cast<int>();
+                // Just in case some weird shit happens again
+                // TLDR, because MouseDown had DoDragDrop, it induced a rare bug in .net framework which made it fail to iterate or AddRange for this type of ListBox
+                // We now only DoDragDrop if a key isn't held, so it should be relatively impossible to induce, but if it does, it will silently fail
+                try
+                {
+                    selectedList.AddRange(selectedEnum);
+                }
+                catch { return; }
+                selectedList.Sort((a, b) => b.CompareTo(a)); // Sort largest first so we don't have issues when we remove them
+                foreach (int selected in selectedList)
+                {
+                    try
+                    {
+                        SaveManager.DeleteData(SaveManager.SaveFilePath + index.PartitionNames[selected]);
+                        index.PartitionNames.RemoveAt(selected);
+                    }
+                    catch { }
+                }
                 PopulateIndexList();
                 index.SaveIndex();
             }
@@ -428,12 +448,8 @@ namespace LuteMod
         private void PartitionIndexBox_MouseDown(object sender, MouseEventArgs e)
         {
             if (this.PartitionIndexBox.SelectedItem == null) return;
-            this.PartitionIndexBox.DoDragDrop(this.PartitionIndexBox.SelectedItem, DragDropEffects.Move);
-            int index = PartitionIndexBox.IndexFromPoint(new Point(PartitionIndexBox.PointToClient(Cursor.Position).X, PartitionIndexBox.PointToClient(Cursor.Position).Y));
-            if (index >= 0 && index < PartitionIndexBox.Items.Count)
-            {
-                PartitionIndexBox.SelectedIndex = index;
-            }
+            if (Control.ModifierKeys == Keys.None) // Prevents a bug when multi-selecting
+                this.PartitionIndexBox.DoDragDrop(this.PartitionIndexBox.SelectedItem, DragDropEffects.Move);
             if (e.Button == MouseButtons.Right)
             {
                 ContextMenuHelper();
