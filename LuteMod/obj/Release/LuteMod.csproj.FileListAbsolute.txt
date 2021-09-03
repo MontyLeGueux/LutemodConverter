@@ -32,3 +32,20 @@ C:\Users\Monty\Documents\programming\Github Repos\LoreOrganizer\bin\Debug\GitRep
 C:\Users\Monty\Documents\programming\Github Repos\LoreOrganizer\bin\Debug\GitRepo\LutemodConverter\LuteMod\bin\Release\Sanford.Multimedia.Timers.dll
 C:\Users\Monty\Documents\programming\Github Repos\LoreOrganizer\bin\Debug\GitRepo\LutemodConverter\LuteMod\bin\Release\Sanford.Collections.dll
 C:\Users\Monty\Documents\programming\Github Repos\LoreOrganizer\bin\Debug\GitRepo\LutemodConverter\LuteMod\obj\Release\LuteMod.csproj.CopyComplete
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\bin\Release\LuteMod.exe.config
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\bin\Release\LuteMod.exe
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\bin\Release\LuteMod.pdb
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\bin\Release\Sanford.Multimedia.Midi.dll
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\bin\Release\Sanford.Multimedia.dll
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\bin\Release\Sanford.Threading.dll
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\bin\Release\Sanford.Multimedia.Timers.dll
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\bin\Release\Sanford.Collections.dll
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\obj\Release\LuteMod.csprojAssemblyReference.cache
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\obj\Release\LuteMod.IndexNotFoundForm.resources
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\obj\Release\LuteMod.MidiConverterForm.resources
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\obj\Release\LuteMod.Properties.Resources.resources
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\obj\Release\LuteMod.csproj.GenerateResource.cache
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\obj\Release\LuteMod.csproj.CoreCompileInputs.cache
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\obj\Release\LuteMod.csproj.CopyComplete
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\obj\Release\LuteMod.exe
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\LuteMod\obj\Release\LuteMod.pdb

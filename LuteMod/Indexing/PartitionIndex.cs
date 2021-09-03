@@ -35,18 +35,20 @@ namespace LuteMod.Indexing
             loaded = true;
         }
 
+
+        private Regex fileReg = new Regex(@"([^\[]*)\[[0-9]*\].sav");
         public void AddFileInIndex(string fileName)
         {
-            string[] tempSplit = fileName.Split('\\');
-            string name = tempSplit[tempSplit.Length - 1];
-            string filteredName = Regex.Replace(name, @"\[[0-9]*\]\.sav", "");
-
-            FileIO.CopyPasteFile(fileName, SaveManager.SaveFilePath + name);
-            if (!partitionNames.Contains(filteredName))
+            var name = System.IO.Path.GetFileName(fileName);
+            if (fileReg.IsMatch(name))
             {
-                partitionNames.Add(filteredName);
+                FileIO.CopyPasteFile(fileName, SaveManager.SaveFilePath + name);
+                var filteredName = fileReg.Match(name).Groups[1].Value;
+                if (!partitionNames.Contains(filteredName) && filteredName != "PartitionIndex")
+                {
+                    partitionNames.Add(filteredName);
+                }
             }
-
         }
 
         public void SaveIndex()

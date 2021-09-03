@@ -244,8 +244,13 @@ namespace LuteMod
                                      MessageBoxButtons.YesNo);
             if (confirmResult == DialogResult.Yes)
             {
-                SaveManager.DeleteData(SaveManager.SaveFilePath + index.PartitionNames[PartitionIndexBox.SelectedIndex]);
-                index.PartitionNames.RemoveAt(PartitionIndexBox.SelectedIndex);
+                List<int> selectedIndices = new List<int>(PartitionIndexBox.SelectedIndices.Cast<int>());
+                selectedIndices.Sort((a, b) => b.CompareTo(a));
+                foreach (int selectedIndex in selectedIndices)
+                {
+                    SaveManager.DeleteData(SaveManager.SaveFilePath + index.PartitionNames[selectedIndex]);
+                    index.PartitionNames.RemoveAt(selectedIndex);
+                }
                 PopulateIndexList();
                 index.SaveIndex();
             }
@@ -428,12 +433,8 @@ namespace LuteMod
         private void PartitionIndexBox_MouseDown(object sender, MouseEventArgs e)
         {
             if (this.PartitionIndexBox.SelectedItem == null) return;
-            this.PartitionIndexBox.DoDragDrop(this.PartitionIndexBox.SelectedItem, DragDropEffects.Move);
-            int index = PartitionIndexBox.IndexFromPoint(new Point(PartitionIndexBox.PointToClient(Cursor.Position).X, PartitionIndexBox.PointToClient(Cursor.Position).Y));
-            if (index >= 0 && index < PartitionIndexBox.Items.Count)
-            {
-                PartitionIndexBox.SelectedIndex = index;
-            }
+            if (Control.ModifierKeys == Keys.None)
+                this.PartitionIndexBox.DoDragDrop(this.PartitionIndexBox.SelectedItem, DragDropEffects.Move);
             if (e.Button == MouseButtons.Right)
             {
                 ContextMenuHelper();

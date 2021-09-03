@@ -24,3 +24,13 @@ C:\Users\Monty\Documents\programming\backups\03-02-2019\CSharpMidiToolkitV5_demo
 C:\Users\Monty\Documents\programming\backups\03-02-2019\CSharpMidiToolkitV5_demo\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.csproj.CoreCompileInputs.cache
 C:\Users\Monty\Documents\programming\backups\03-02-2019\CSharpMidiToolkitV5_demo\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.csproj.CopyComplete
 C:\Users\Monty\Documents\programming\backups\03-02-2019\CSharpMidiToolkitV5_demo\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.dll
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\Sanford.Multimedia.Midi\bin\Release\Sanford.Multimedia.Midi.dll
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.csprojAssemblyReference.cache
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.UI.DeviceDialog.resources
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.UI.InputDeviceDialog.resources
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.UI.OutputDeviceDialog.resources
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.UI.PianoControlDialog.resources
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.csproj.GenerateResource.cache
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.csproj.CoreCompileInputs.cache
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.csproj.CopyComplete
+C:\Users\Dimen_hmzu9w6\Source\Repos\LutemodConverter2\Sanford.Multimedia.Midi\obj\Release\Sanford.Multimedia.Midi.dll
